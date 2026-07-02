@@ -1,6 +1,7 @@
 import { getArticleBySlug, getAllArticles } from "@/lib/articles";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Comments from "@/components/Comments";
 
 function renderParagraph(text: string, key: number) {
   const t = text.trim();
@@ -56,6 +57,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           ))}
         </div>
         <article>{article.content.map((paragraph, i) => renderParagraph(paragraph, i))}</article>
+                <Comments slug={slug} />
       </div>
     </div>
   );

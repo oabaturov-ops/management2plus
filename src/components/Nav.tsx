@@ -5,13 +5,17 @@ import { useState } from "react";
 export default function Nav() {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { href: "/#home", label: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F" },
-    { href: "/#about", label: "\u041E \u043F\u0440\u043E\u0435\u043A\u0442\u0435" },
-    { href: "/#concepts", label: "\u041A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438" },
-    { href: "/blog", label: "\u0411\u043B\u043E\u0433" },
-    { href: "/library", label: "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430" },
-    { href: "/#contact", label: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B" },
+    const links = [
+    { href: "/#home", label: "\u0413\u043b\u0430\u0432\u043d\u0430\u044f" },
+    { href: "/#about", label: "\u041e \u043f\u0440\u043e\u0435\u043a\u0442\u0435" },
+    { href: "/#concepts", label: "\u041a\u043e\u043d\u0446\u0435\u043f\u0446\u0438\u0438" },
+    { href: "/blog", label: "\u0411\u043b\u043e\u0433" },
+    { href: "/menedzhment-2-0", label: "\u041c\u0435\u043d\u0435\u0434\u0436\u043c\u0435\u043d\u0442 2.0" },
+    { href: "/pravo-2-0", label: "\u041f\u0440\u0430\u0432\u043e 2.0" },
+    { href: "/meditsina-2-0", label: "\u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0430 2.0" },
+    { href: "/stroitelnyj-kontrol-2-0", label: "\u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c 2.0" },
+    { href: "/obrazovanie-2-0", label: "\u041e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u0438\u0435 2.0" },
+    { href: "/#contact", label: "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b" },
   ];
 
   return (
