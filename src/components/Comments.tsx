@@ -23,7 +23,7 @@ export default function Comments({ slug }: { slug: string }) {
       .select("*")
       .eq("article_slug", slug)
       .order("created_at", { ascending: false })
-      .then(({ data }) => {
+      .then(({ data }: any) => {
         if (data) setComments(data);
       });
   }, [slug]);
